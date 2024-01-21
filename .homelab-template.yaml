@@ -1,0 +1,25 @@
+_template_version: v1.0.0
+additionalResources: crds,network-policies,rbac,secrets,secrets,service-accounts,services
+configmap: true
+deployment: true
+externalSecret: true
+helm: false
+ingClass: nginx-crt-house
+ingExtraAnnotations: |-
+  nginx.ingress.kubernetes.io/backend-protocol: HTTP
+  nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+ingHost: argo.crt.house
+ingPathType: Prefix
+ingSvcName: argocd-server
+ingSvcPortNum: 8080
+ingWebSockets: false
+ingress: true
+labels: 'app: argocd'
+name: argocd
+namespace: argocd
+pvc: false
+service: false
+serviceAccount: false
+sts: true
+upstreamURL: https://argoproj.github.io/cd/
+url: https://github.com/charlesthomas/homelab-argocd
