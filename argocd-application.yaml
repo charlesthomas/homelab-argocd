@@ -11,8 +11,8 @@ spec:
   source:
     repoURL: https://github.com/charlesthomas/homelab-argocd
     targetRevision: HEAD
-  destinations:
-  - server: https://kubernetes.default.svc
+  destination:
+    server: https://kubernetes.default.svc
     namespace: argocd
   syncPolicy:
     automated:
