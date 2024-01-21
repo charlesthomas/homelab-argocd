@@ -1,5 +1,5 @@
 _template_version: v1.0.0
-additionalResources: crds,network-policies,rbac,secrets,secrets,service-accounts,services
+additionalResources: crds,network-policies,rbac,secrets,service-accounts,services
 configmap: true
 deployment: true
 externalSecret: true

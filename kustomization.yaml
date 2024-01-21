@@ -16,6 +16,5 @@ resources:
 - network-policies.yaml
 - rbac.yaml
 - secrets.yaml
-- secrets.yaml
 - service-accounts.yaml
 - services.yaml
