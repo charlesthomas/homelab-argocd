@@ -18,4 +18,3 @@ resources:
 - secrets.yaml
 - service-accounts.yaml
 - services.yaml
-- test.yaml
