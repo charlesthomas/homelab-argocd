@@ -2,6 +2,7 @@
 apiVersion: networking.k8s.io
 kind: Ingress
 metadata:
+  name: argocd
   annotations:
     external-dns.alpha.kubernetes.io/hostname: argo.crt.house
     external-dns.alpha.kubernetes.io/target: 
