@@ -1,13 +1,15 @@
-_template_version: v1.0.0
-additionalResources: crds,network-policies,rbac,secrets,service-accounts,services
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 056d45b
+_src_path: /tmp/farts/homelab-template
+additionalResources: crds,network-policies,rbac,secrets,service-accounts,services,test
 configmap: true
 deployment: true
 externalSecret: true
 helm: false
 ingClass: nginx-crt-house
-ingExtraAnnotations: |-
-  nginx.ingress.kubernetes.io/backend-protocol: HTTP
-  nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+ingExtraAnnotations: 'nginx.ingress.kubernetes.io/backend-protocol: HTTP
+
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"'
 ingHost: argo.crt.house
 ingPathType: Prefix
 ingSvcName: argocd-server
