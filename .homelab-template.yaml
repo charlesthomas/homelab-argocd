@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: 056d45b
+_commit: v1.0.1-2-g7b9721e
 _src_path: /private/tmp/farts/homelab-template
 additionalResources: crds,network-policies,rbac,secrets,service-accounts,services,test
 configmap: true
