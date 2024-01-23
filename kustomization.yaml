@@ -9,14 +9,14 @@ commonLabels:
 resources:
 - argocd-application.yaml
 - configmaps.yaml
+- crds.yaml
 - deployments.yaml
 - external-secrets.yaml
 - ingresses.yaml
 - namespaces.yaml
-- statefulsets.yaml
-- crds.yaml
 - network-policies.yaml
 - rbac.yaml
 - secrets.yaml
 - service-accounts.yaml
 - services.yaml
+- statefulsets.yaml
