@@ -7,7 +7,6 @@ commonLabels:
   app: argocd
 
 resources:
-- argocd-application.yaml
 - configmaps.yaml
 - crds.yaml
 - deployments.yaml
