@@ -1,20 +1,19 @@
-_commit: v1.1.0
-_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+_commit: v1.3.5
+_src_path: ./homelab-template
 additionalResources: network-policies.yaml
+backups: false
 helm: false
-ingClass: nginx-crt-house
-ingExtraAnnotations: |-
-  nginx.ingress.kubernetes.io/backend-protocol: HTTP
-  nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-ingHost: argo.crt.house
-ingName: argocd
-ingPathType: Prefix
-ingSvcName: argocd-server
-ingSvcPortNum: 8080
-ingWebSockets: false
+homepageDescription: Cluster Updater
+homepageGroup: Kubernetes
+homepageIcon: argocd
+homepageName: ArgoCD
+ingSecret: ''
+ingress: false
 labels: 'app: argocd'
 name: argocd
 namespace: argocd
+pvc: false
+reloader: true
 resources:
 - crds.yaml
 - configmaps.yaml
@@ -26,7 +25,7 @@ resources:
 - service-accounts.yaml
 - services.yaml
 - statefulsets.yaml
-svcName: argocd-server
-svcPortNum: 8080
+service: false
+serviceAccount: false
 upstreamURL: https://argoproj.github.io/cd/
 url: https://github.com/charlesthomas/homelab-argocd

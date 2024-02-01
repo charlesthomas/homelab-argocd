@@ -3,19 +3,42 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: argocd
 
+commonAnnotations:
+  repo: https://github.com/charlesthomas/homelab-argocd
 commonLabels:
   app: argocd
 
 resources:
-- configmaps.yaml
-- crds.yaml
-- deployments.yaml
-- external-secrets.yaml
-- ingresses.yaml
-- namespaces.yaml
-- network-policies.yaml
-- rbac.yaml
-- secrets.yaml
-- service-accounts.yaml
-- services.yaml
-- statefulsets.yaml
+- resources/configmaps.yaml
+- resources/crds.yaml
+- resources/deployments.yaml
+- resources/external-secrets.yaml
+- resources/ingresses.yaml
+- resources/namespaces.yaml
+- resources/network-policies.yaml
+- resources/rbac.yaml
+- resources/secrets.yaml
+- resources/service-accounts.yaml
+- resources/services.yaml
+- resources/statefulsets.yaml
+patches:
+- patch: |-
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: all
+      namespace: argocd
+      annotations:
+        reloader.stakater.com/auto: "true"
+  target:
+    kind: Deployment
+- patch: |-
+    apiVersion: apps/v1
+    kind: StatefulSet
+    metadata:
+      name: all
+      namespace: argocd
+      annotations:
+        reloader.stakater.com/auto: "true"
+  target:
+    kind: StatefulSet
