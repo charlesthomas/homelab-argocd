@@ -5,9 +5,15 @@ metadata:
   name: argocd
   annotations:
     external-dns.alpha.kubernetes.io/hostname: argo.crt.house
-    external-dns.alpha.kubernetes.io/target: 
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    gethomepage.dev/href: https://argo.crt.house
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Cluster Updater
+    gethomepage.dev/group: Kubernetes
+    gethomepage.dev/icon: argocd
+    gethomepage.dev/name: ArgoCD
+    gethomepage.dev/pod-selector: ""
 spec:
   ingressClassName: nginx-crt-house
   rules:
