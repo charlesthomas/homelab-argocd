@@ -1,8 +1,9 @@
-_commit: v1.3.5
+_commit: v1.5.0
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: network-policies.yaml
 backups: false
 helm: false
+homepageEnabled: true
 homepageDescription: Cluster Updater
 homepageGroup: Kubernetes
 homepageIcon: argocd
