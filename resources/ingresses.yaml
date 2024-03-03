@@ -15,7 +15,7 @@ metadata:
     gethomepage.dev/name: ArgoCD
     gethomepage.dev/pod-selector: ""
 spec:
-  ingressClassName: nginx-crt-house
+  ingressClassName: nginx-internal
   rules:
     - host: "argo.crt.house"
       http:
