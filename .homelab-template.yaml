@@ -1,14 +1,15 @@
-_commit: v1.6.2
+_commit: v1.8.2
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: network-policies.yaml
 backups: false
 helm: false
-homepageEnabled: true
 homepageDescription: Cluster Updater
+homepageEnabled: true
 homepageGroup: Kubernetes
 homepageIcon: argocd
 homepageName: ArgoCD
-ingSecret: ''
+ingHost: argo.crt.house
+ingName: argocd
 ingress: false
 labels: 'app: argocd'
 name: argocd
