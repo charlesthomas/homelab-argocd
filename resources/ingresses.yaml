@@ -30,4 +30,3 @@ spec:
   tls:
     - hosts:
       - argo.crt.house
-
