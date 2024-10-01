@@ -17,7 +17,6 @@ metadata:
     app.kubernetes.io/part-of: argocd
   name: argocd-cmd-params-cm
 data:
-  controller.diff.server.side: "true"
   server.insecure: "true"
 ---
 apiVersion: v1
