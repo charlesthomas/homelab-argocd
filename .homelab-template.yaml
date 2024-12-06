@@ -20,7 +20,6 @@ resources:
 - crds.yaml
 - configmaps.yaml
 - deployments.yaml
-- external-secrets.yaml
 - ingresses.yaml
 - rbac.yaml
 - secrets.yaml

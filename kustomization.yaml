@@ -12,7 +12,6 @@ resources:
 - resources/configmaps.yaml
 - resources/crds.yaml
 - resources/deployments.yaml
-- resources/external-secrets.yaml
 - resources/ingresses.yaml
 - resources/namespaces.yaml
 - resources/network-policies.yaml
