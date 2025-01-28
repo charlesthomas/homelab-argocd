@@ -52,7 +52,7 @@ patches:
         gethomepage.dev/enabled: "true"
         gethomepage.dev/description: Cluster Updater
         gethomepage.dev/group: Kubernetes
-        gethomepage.dev/icon: argocd
+        gethomepage.dev/icon: argo-cd
         gethomepage.dev/name: ArgoCD
         gethomepage.dev/pod-selector: ""
   target:

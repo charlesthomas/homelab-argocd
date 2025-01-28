@@ -6,7 +6,7 @@ helm: false
 homepageDescription: Cluster Updater
 homepageEnabled: true
 homepageGroup: Kubernetes
-homepageIcon: argocd
+homepageIcon: argo-cd
 homepageName: ArgoCD
 ingHost: argo.crt.house
 ingName: argocd
