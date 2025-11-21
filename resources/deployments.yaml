@@ -327,7 +327,7 @@ spec:
         - ""
         - --appendonly
         - "no"
-        image: redis:8.2.3-alpine
+        image: redis:8.4.0-alpine
         imagePullPolicy: Always
         name: redis
         ports:
