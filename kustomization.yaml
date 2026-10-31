@@ -5,8 +5,10 @@ namespace: argocd
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-argocd
-commonLabels:
-  app: argocd
+labels:
+- includeSelectors: true
+  pairs:
+    app: argocd
 
 resources:
 - resources/configmaps.yaml
